@@ -12,7 +12,7 @@
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "${file}",
+                "${fileDirname}/*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -41,7 +41,8 @@
             "label": "save and compile for C",
             "command": "gcc",
             "args": [
-                "${file}",
+                //"${file}",
+                "${fileDirname}/*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
